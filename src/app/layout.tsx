@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Raleway } from "next/font/google";
+import "./globals.scss";
+import Header from "./pageComponents/Header/Header";
+import Footer from "./pageComponents/Footer/Footer";
+import useSWR from "swr";
+import { getData } from "./reducers/mainPageredcer";
+import PageProvider from "./pageComponents/PageProvider/PageProvider";
+const raleway = Raleway({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${raleway.className} main_content`}>
+        <Header />
+        {children}
+
+        <Footer />
+      </body>
     </html>
   );
 }

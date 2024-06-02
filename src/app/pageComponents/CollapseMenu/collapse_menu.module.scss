@@ -1,0 +1,48 @@
+@import "../../globals.scss";
+
+.collapse_menu__wrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  nav {
+    margin: 0;
+  }
+}
+
+.collapse_menu__category {
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid $accentColor;
+  box-sizing: border-box;
+  padding-left: 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.collapse_menu__subcategory_item {
+  color: $white;
+  text-decoration: none;
+  width: 350px;
+
+  &:active {
+    color: $accentColor;
+  }
+}
+
+.collapse_menu__subcategory {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  gap: 15px;
+
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}

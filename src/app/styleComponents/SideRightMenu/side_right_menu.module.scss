@@ -1,0 +1,35 @@
+@import "../../globals.scss";
+
+.sideRight_item__wrapper {
+}
+
+.sideRight_item {
+  width: 310px;
+  height: 60px;
+  background-color: $white;
+  border-bottom: 1px solid $grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 24px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: 0.1s;
+  -webkit-box-shadow: -27px 0px 28px -16px rgba(182, 182, 182, 0.2) inset;
+  -moz-box-shadow: -27px 0px 28px -16px rgba(182, 182, 182, 0.2) inset;
+  box-shadow: -27px 0px 28px -16px rgba(182, 182, 182, 0.2) inset;
+
+  &:hover {
+    background-color: $blackGrey;
+    color: $white;
+
+    svg path {
+      stroke: $white;
+    }
+  }
+
+  &:last-child {
+    border: none;
+  }
+}

@@ -1,0 +1,10 @@
+@import "./globals.scss";
+
+.main_page {
+  min-height: 100vh;
+}
+
+.banner__wrapper {
+  background-color: $darkGrey;
+  min-height: 550px;
+}

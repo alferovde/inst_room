@@ -1,0 +1,56 @@
+@import "@/../../../globals.scss";
+
+.style_button {
+  padding: 15px 32px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.accent_button {
+  background-color: $accentColor;
+  color: $white;
+  text-transform: uppercase;
+  line-height: 20px;
+
+  &:hover {
+    background-color: $blackGrey;
+  }
+}
+
+.grey_button {
+  background-color: $grey;
+  color: $black;
+  text-transform: uppercase;
+  line-height: 20px;
+  border: 1px solid $lightGrey;
+  &:hover {
+    background-color: $accentColor;
+    color: $white;
+    border: 1px solid $accentColor;
+  }
+}
+.lightGrey_button {
+  background-color: $lightGrey;
+  color: $white;
+  text-transform: uppercase;
+  line-height: 20px;
+  &:hover {
+    background-color: $accentColor;
+    color: $white;
+  }
+}
+.blackGrey_button {
+  background-color: $blackGrey;
+  color: $white;
+  text-transform: uppercase;
+  line-height: 20px;
+  &:hover {
+    background-color: $accentColor;
+    color: $white;
+  }
+}

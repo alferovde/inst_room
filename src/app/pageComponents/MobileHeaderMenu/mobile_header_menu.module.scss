@@ -1,0 +1,72 @@
+@import "../../globals.scss";
+
+.mobile_top_menu {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $accentColor;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile_bottom_menu {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $accentColor;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile_menu__wrapper {
+  width: 100%;
+  min-width: 420px;
+  min-height: 400px;
+  background-color: #292929;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  right: 0;
+  z-index: 555;
+}
+
+.mobile_top_menu__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.mobile_top_menu__content {
+  display: flex;
+  justify-content: space-around;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      background-color: transparent;
+    }
+  }
+
+  .mobile_top_menu__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+.mobile_bottom_menu__content {
+  nav {
+    margin-top: 25px;
+    display: flex;
+    width: 85%;
+    justify-content: space-around;
+  }
+
+  .mobile_bottom_menu__collapse_menu {
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../globals.scss";
+
+.social_menu {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+  margin-left: auto;
+
+  li {
+    cursor: pointer;
+
+    &:hover {
+      svg path {
+        fill: $white;
+        transition: 0.2s;
+      }
+
+      svg rect {
+        fill: $black;
+
+        transition: 0.2s;
+      }
+    }
+  }
+}

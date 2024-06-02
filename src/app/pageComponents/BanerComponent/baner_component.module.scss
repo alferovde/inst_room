@@ -1,0 +1,268 @@
+@import "../../globals.scss";
+
+.baner__wrapper {
+  display: grid;
+
+  padding-top: 20px;
+  justify-content: space-between;
+  gap: 20px;
+  // grid-template-areas:
+  //   "A A A A  B B B  C C"
+  //   "A A A A  B B B  C C"
+  //   "A A A A  B B B  D D"
+  //   "A A A A  B B B  D D";
+
+  grid-template-areas:
+    "A A A A  B B B  C C"
+    "A A A A  B B B  C C"
+    "A A A A  B B B  D D"
+    "A A A A  B B B  D D";
+}
+
+.baner__arrow {
+  width: 58px;
+  height: 58px;
+  background-color: $black;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s;
+
+  &:hover {
+    background-color: $accentColor;
+  }
+}
+
+.baner__img_1 {
+  grid-area: A;
+  max-width: 640px;
+  height: 100%;
+  background-image: url("../../../../public/images/baner1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 32px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 5px;
+  &::before {
+    content: "";
+    background-color: #0000005e;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+  }
+
+  button {
+    font-size: 14px;
+    width: 210px;
+    height: 50px;
+    margin-top: 140px;
+    position: relative;
+  }
+
+  h1 {
+    color: $white;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    position: relative;
+  }
+}
+.baner__img_2 {
+  grid-area: B;
+  max-width: 311px;
+  height: 488px;
+  position: relative;
+  padding: 16px;
+  box-sizing: border-box;
+
+  h2 {
+    color: $white;
+    width: 311px;
+    margin: 0;
+  }
+
+  background-image: url("../../../../public/images/baner2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  box-sizing: border-box;
+}
+.baner__img_3 {
+  grid-area: C;
+  max-width: 310px;
+  height: 234px;
+  position: relative;
+  background-image: url("../../../../public/images/baner3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  h2 {
+    color: $white;
+
+    margin: 0;
+  }
+}
+.baner__img_4 {
+  grid-area: D;
+  max-width: 310px;
+  height: 234px;
+  position: relative;
+  background-image: url("../../../../public/images/baner4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  h2 {
+    color: $white;
+
+    margin: 0;
+  }
+}
+
+@media (max-width: 878px) {
+  .baner__wrapper {
+    display: grid;
+
+    padding-bottom: 30px;
+    grid-template-areas:
+      "A A A A A A  B B B B B B  "
+      "C C C C C C  D D D D D D";
+  }
+
+  .baner__img_3 {
+    grid-area: C;
+    max-width: 100%;
+    height: 234px;
+  }
+  .baner__img_4 {
+    grid-area: D;
+    max-width: 100%;
+    height: 234px;
+  }
+}
+
+@media (max-width: 672px) {
+  .baner__wrapper {
+    display: grid;
+
+    padding-bottom: 30px;
+    grid-template-areas:
+      "A A "
+      "C B"
+      "D B";
+  }
+
+  .baner__img_1 {
+    grid-area: A;
+    max-width: 640px;
+    height: 100%;
+    background-image: url("../../../../public/images/baner1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 32px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+    &::before {
+      content: "";
+      background-color: #0000005e;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 5px;
+    }
+
+    button {
+      font-size: 14px;
+      width: 210px;
+      height: 50px;
+      margin-top: 140px;
+      margin-left: 50px;
+      position: relative;
+    }
+  }
+
+  .baner__img_2 {
+    grid-area: B;
+    max-width: 351px;
+    height: 488px;
+    position: relative;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    h2 {
+      color: $white;
+      width: 311px;
+      margin: 0;
+    }
+
+    background-image: url("../../../../public/images/baner2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 569px) {
+  .baner__wrapper {
+    display: grid;
+    background-color: #62f826;
+    padding-bottom: 30px;
+    grid-template-areas:
+      "A A  "
+      "B  C  "
+      "B  D";
+  }
+
+  .baner__img_1 {
+    grid-area: A;
+    width: 100%;
+    height: 100%;
+    // background-image: url("../../../../public/images/baner11.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 32px;
+    box-sizing: border-box;
+    position: relative;
+    button {
+      font-size: 14px;
+      width: 210px;
+      height: 50px;
+      margin-top: 40px;
+      margin-left: 50px;
+    }
+
+    h1 {
+      color: $white;
+      padding: 0;
+      margin: 0;
+      font-size: 30px;
+    }
+  }
+
+  .baner__img_2 {
+    h2 {
+      color: $white;
+      width: 50%;
+      margin: 0;
+    }
+
+    background-position: center center;
+  }
+}

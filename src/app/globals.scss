@@ -1,0 +1,26 @@
+$white: #fff;
+$black: #000;
+$grey: #f2f5f7;
+$lightGrey: #dedbdb;
+$middleGrey: #8a8a8a;
+$blackGrey: #212526;
+$darkGrey: #3b3b3b;
+$accentColor: #f05a00;
+$accentColor_alt: #fc573b;
+
+.main_content {
+  background-color: $grey;
+  margin: 0;
+  padding: 0;
+  min-width: 420px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container__ext {
+  max-width: 1460px;
+}
