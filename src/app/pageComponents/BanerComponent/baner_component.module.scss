@@ -222,7 +222,7 @@
 @media (max-width: 569px) {
   .baner__wrapper {
     display: grid;
-    background-color: #62f826;
+
     padding-bottom: 30px;
     grid-template-areas:
       "A A  "
@@ -234,7 +234,7 @@
     grid-area: A;
     width: 100%;
     height: 100%;
-    // background-image: url("../../../../public/images/baner11.png");
+
     background-size: cover;
     background-repeat: no-repeat;
     padding: 32px;

@@ -1,17 +1,18 @@
-import React from "react";
+import React, { ReactNode } from "react";
+import { SWRResponse } from "swr";
 type PageProvider = {
   children: React.ReactNode;
   isLoading: boolean;
-  isError: string;
+  error: string;
 };
 
-const PageProvider = ({ children, isError, isLoading }: PageProvider) => {
+const PageProvider = ({ children, error, isLoading }: PageProvider) => {
   return (
     <div>
       {isLoading ? (
         <div className="container"> "Loading..."</div>
-      ) : isError ? (
-        <div className="container">{isError}</div>
+      ) : error ? (
+        <div className="container">{error}</div>
       ) : (
         children
       )}
