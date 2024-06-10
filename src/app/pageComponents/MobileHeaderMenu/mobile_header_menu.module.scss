@@ -41,6 +41,7 @@
 .mobile_top_menu__content {
   display: flex;
   justify-content: space-around;
+  min-height: 300px;
 
   ul {
     display: flex;
@@ -56,6 +57,16 @@
     flex-direction: column;
     justify-content: space-around;
   }
+
+  // .header__product_info__wrapper {
+  //   .header__user {
+  //     .header__user_section {
+  //       .dropdown_usermenu__wrapper {
+  //         background-color: #fff !important;
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 .mobile_bottom_menu__content {

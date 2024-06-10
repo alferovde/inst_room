@@ -30,7 +30,7 @@ const Header = async () => {
           <div className={style.header__time}>Время работы: 10:00-20:00</div>
           <div className={style.header__phone}>
             <p>+7 495 120-32-14</p>
-            <a href="tel:+123456789">Заказать звонок</a>
+            <Link href={"/getcall"}>Заказать звонок</Link>
           </div>
           <div className={style.header__product_info}>
             <HeaderUserInfo />

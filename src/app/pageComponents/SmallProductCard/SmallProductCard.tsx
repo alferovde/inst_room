@@ -73,7 +73,6 @@ const SmallProductCard = ({
     );
   };
 
-  console.log(title);
   return (
     <div className={style.small_product_card}>
       <div className={style.small_product_card_header}>

@@ -62,7 +62,6 @@ const SimpleSlider = ({ title, id, data }: SimpleSlider) => {
 
   const renderCard = () => {
     return data.map((item) => {
-      console.log(item);
       return item.category_id === id ? (
         <SmallProductCard {...item} />
       ) : undefined;

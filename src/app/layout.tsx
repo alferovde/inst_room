@@ -3,9 +3,7 @@ import { Raleway } from "next/font/google";
 import "./globals.scss";
 import Header from "./pageComponents/Header/Header";
 import Footer from "./pageComponents/Footer/Footer";
-import useSWR from "swr";
-import { getData } from "./reducers/mainPageredcer";
-import PageProvider from "./pageComponents/PageProvider/PageProvider";
+
 const raleway = Raleway({
   subsets: ["latin"],
 });
@@ -17,13 +15,22 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
+  getcall,
+  auth,
+  reg,
 }: Readonly<{
   children: React.ReactNode;
+  getcall: React.ReactNode;
+  auth: React.ReactNode;
+  reg: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <body className={`${raleway.className} main_content`}>
         <Header />
+        {getcall}
+        {auth}
+        {reg}
         {children}
 
         <Footer />

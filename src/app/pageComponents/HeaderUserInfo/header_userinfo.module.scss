@@ -45,7 +45,57 @@
       }
     }
   }
+  .header__user {
+    &:hover {
+      // background-color: transparent;
+
+      svg path {
+        stroke: $white;
+      }
+      .info_data {
+        background-color: $darkGrey;
+      }
+    }
+
+    .header__user_section {
+      .header__user_section_register {
+      }
+
+      .header__user_section_login {
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        display: flex;
+      }
+
+      // a {
+      //   &:first-child {
+      //     border-right: 2px solid white;
+
+      //     display: flex;
+      //     align-items: center;
+      //     justify-content: center;
+      //     padding-right: 10px;
+      //   }
+
+      //   &:last-child {
+      //     padding-left: 10px;
+      //   }
+
+      //   img {
+      //     transform: rotate(-45deg);
+      //   }
+      // }
+    }
+  }
 }
+
+.header__not_auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header__cart__info {
   width: 140px;
   color: $white;

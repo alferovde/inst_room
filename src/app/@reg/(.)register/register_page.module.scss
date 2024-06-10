@@ -1,0 +1,41 @@
+@import "../../globals.scss";
+
+.register_page__wrapper {
+  max-width: 622px;
+  min-height: 700px;
+  background-color: $white;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 34px;
+    font-size: 20px;
+    padding-top: 60px;
+  }
+
+  p {
+    max-width: 310px;
+    margin: 0 auto;
+    font-size: 12px;
+    margin-top: 12px;
+    padding: 15px 15px 60px 15px;
+  }
+}
+
+.register_page__form {
+  max-width: 340px;
+
+  // height: 396px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+
+  button {
+  }
+}

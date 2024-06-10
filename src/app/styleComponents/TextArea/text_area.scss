@@ -1,0 +1,21 @@
+@import "../../globals.scss";
+
+.text_area__wrapper {
+  display: flex;
+  flex-direction: column;
+  color: $middleGrey;
+  width: 100%;
+
+  textarea {
+    max-width: 100%;
+    min-height: 100px;
+    outline: none;
+    border: none;
+    border: 2px solid $lightGrey;
+    color: $middleGrey;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+}

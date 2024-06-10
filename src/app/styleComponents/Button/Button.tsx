@@ -8,7 +8,12 @@ type Button = {
   click?: (params: any) => any;
 };
 
-const Button = ({ children, color, disable = false, click }: Button) => {
+const Button = ({
+  children,
+  color,
+  disable = false,
+  click = undefined,
+}: Button) => {
   const setStyleButton = () => {
     switch (color) {
       case "accent":

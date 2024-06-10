@@ -1,0 +1,81 @@
+@import "../../globals.scss";
+
+.login_page__wrapper {
+  max-width: 422px;
+  position: relative;
+  height: 430px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 64px 56px;
+  box-sizing: border-box;
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 48px;
+  }
+}
+
+.login_form {
+  max-width: 310px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+
+  button {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 12px;
+    span {
+      color: $middleGrey;
+    }
+  }
+
+  a {
+    margin-right: auto;
+    text-decoration: none;
+    color: $accentColor;
+    margin-top: 15px;
+  }
+}
+
+.code_component {
+  max-width: 422px;
+  position: relative;
+  height: 400px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 64px 56px;
+  box-sizing: border-box;
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 48px;
+  }
+}
+
+.code_component__timer {
+  margin-top: 30%;
+  font-size: 12px;
+
+  text-align: right;
+}
+
+.change_number {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  height: 70px;
+}
+.change_number_btn {
+  p {
+    font-size: 14px;
+  }
+}

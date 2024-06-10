@@ -1,0 +1,57 @@
+@import "../../globals.scss";
+
+.get_call_wrapper {
+  border-radius: 5px;
+  max-width: 622px;
+  height: 532px;
+  background-color: #fff;
+
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.get_call_form {
+  width: 310px;
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  p {
+    margin-top: -10px;
+    font-size: 12px;
+  }
+
+  span {
+    color: $middleGrey;
+  }
+}
+
+.is_send__wrapper {
+  width: 422px;
+  height: 400px;
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 64px 96px;
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    width: 260px;
+    margin-bottom: 88px;
+    text-align: center;
+  }
+}

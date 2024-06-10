@@ -1,0 +1,24 @@
+@import "../../globals.scss";
+
+.btn_close_component {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  cursor: pointer;
+  &::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: $black;
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  &::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: $black;
+    position: absolute;
+    transform: rotate(135deg);
+  }
+}
